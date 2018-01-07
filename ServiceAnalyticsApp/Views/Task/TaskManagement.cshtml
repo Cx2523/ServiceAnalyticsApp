@@ -1,0 +1,32 @@
+﻿@model ServiceAnalyticsApp.Models.TaskModel
+@{
+    ViewBag.Title = "View";
+}
+
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Title)
+        @Html.TextBox("Title", "New Task")
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Description)
+        @Html.TextArea("Description")
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.StartDate)
+        @Html.TextBox("StartDate")
+    </div>
+    <div>
+        @Html.LabelFor(m => m.DueDate)
+        @Html.TextBox("DueDate")
+    </div>
+    <button type="submit"> Submit </button>
+}
+
+
+
+
+
