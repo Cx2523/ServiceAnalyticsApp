@@ -19,9 +19,9 @@ namespace ServiceAnalyticsApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult TaskManagment()
+        public ActionResult AddTask()
         {
-            return View();
+            return View("TaskManagement");
         }
     }
 }
